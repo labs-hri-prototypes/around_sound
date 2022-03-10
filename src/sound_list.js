@@ -71,6 +71,8 @@ const file_list = [
   "S_thankyou_old.wav",
   "S_touch_gain-5.wav",
   "S_thankyou_f-g.wav",
+  "S_thankyou_f-g_normalize-70.wav",
+  "S_thankyou_f-g_normalize-50.wav",
   "S_touch.wav",
   "S_touch_gain-9.wav"
 ];
