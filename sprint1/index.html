@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zommestyle">
+    <link rel="shortcut icon" href="">
+    <title>AROUND Sound Test</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="buffer-loader.js"></script>
+    <script src="play.js"></script>
+  </head>
+
+  <body>
+    <div class="column">
+      <video id="main_player" src="src/video/video_hello.mp4" type="video/mp4"></video>
+    </div>
+    <div class="column">
+      <div class="container">
+        <label for="theme">Choose theme... </label>
+        <select name="theme" onchange="handleOnChange(this)">
+          <option value="original">Original</option>
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+        </select><br><br>
+        <input type="button" id="btn_knock" value="knock" onclick="handleOnClick(this)"></input>
+        <input type="button" id="btn_hello" value="hello" onclick="handleOnClick(this)"></input>
+        <input type="button" id="btn_open" value="open" onclick="handleOnClick(this)"></input>
+        <input type="button" id="btn_noti" value="noti" onclick="handleOnClick(this)"></input>
+        <input type="button" id="btn_close" value="close" onclick="handleOnClick(this)"></input>
+        <input type="button" id="btn_err" value="err" onclick="handleOnClick(this)"></input>
+      </div>
+    </div>
+  </body>
+</html>

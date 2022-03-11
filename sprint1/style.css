@@ -1,0 +1,28 @@
+.column {
+	position: relative;
+	display: inline-block;
+	width: 49vw;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+.container {
+	position: relative;
+	padding: 40px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 98vw;
+}
+
+video {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
