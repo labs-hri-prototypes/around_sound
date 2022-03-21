@@ -1,0 +1,77 @@
+:root {
+  --grid-xs: 8px;
+  --grid-s: 20px;
+  --grid-m: 40px;
+  --grid-l: 80px;
+  --grid-xl: 200px;
+
+  --gap-s: 4px;
+  --gap-m: 8px;
+  --gap-l: 20px;
+  --gap-xl: 40px;
+
+  --col: 6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  font-size: calc(var(--grid-xs)*2);
+}
+body {
+  position: relative;
+  background-color: black;
+}
+
+.container {
+  padding: var(--gap-l) var(--gap-xl);
+}
+
+.container-header {
+  position: fixed;
+  width: 100%;
+  height: var(--grid-l);
+  top: 0;
+  z-index: 999;
+  background-color: rgba(32,32,32, 0.5);
+  backdrop-filter: blur(var(--grid-xs));
+  color: white;
+}
+.container-page {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--gap-m);
+  max-width: calc((var(--grid-xl) + var(--gap-m))*var(--col) - var(--gap-m));
+  margin: calc(var(--grid-l) + var(--gap-l)) auto;
+}
+
+button {
+  width: var(--grid-xl);
+  height: var(--grid-l);
+  background: transparent;
+  background-color: rgba(64, 255, 128, 0.3);
+  color: white;
+  opacity: 0.8;
+  border-radius: var(--grid-xs);
+  outline: none;
+}
+button.original {
+  background-color: rgba(64, 128, 255, 0.4);
+}
+button.old {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+button:active {
+  transform: scale(95%);
+  opacity: 1;
+}
+
+select {
+  background-color: rgba(64,64,64, 0.6);
+  color: white;
+  height: var(--grid-m);
+  padding: var(--gap-s);
+  border-radius: var(--gap-s);
+}
