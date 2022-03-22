@@ -1,4 +1,8 @@
 const file_list = [
+  "S_sinewave_200.wav",
+  "S_sinewave_440.wav",
+  "S_sinewave_1000.wav",
+  "S_sinewave_2000.wav",
   "S_noti.wav",
   "S_noti_A.wav",
   "S_noti_B.wav",
