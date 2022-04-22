@@ -14,6 +14,7 @@ const file_list = [
   "S_knock_B.wav",
   "S_knock_C.wav",
   "S_knock_D.wav",
+  "S_knock_high.wav",
   "S_knock_old.wav",
   "S_ask.wav",
   "S_ask_A.wav",
